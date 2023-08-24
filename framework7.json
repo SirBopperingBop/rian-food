@@ -1,0 +1,18 @@
+{
+  "cwd": "D:\\Projects\\joy",
+  "type": [
+    "pwa"
+  ],
+  "name": "Joy",
+  "framework": "react",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#ff8600",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
