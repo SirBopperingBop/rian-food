@@ -98,7 +98,8 @@ TODO:
 FAROOKH TODO: when user is logged in, add "Add | Edit" buttons in the cards
 FAROOKH TODO: create forms similar to LakeJohnson for admin to add/edit items
 FAROOKH TODO: for now use static JSON. Working on table structure now.
-FAROOKH TODO: after user login, place name or email in the home page
+FAROOKH TODO: after user login, place name or email in the home page.
+FAROOKH TODO: host the project on netlify. 
 */
 
 import React, { useState, useEffect } from 'react';
