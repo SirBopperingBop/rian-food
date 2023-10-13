@@ -41,12 +41,14 @@ import RecipeList from '../pages/recipe-list.jsx';
 import FoodList from '../pages/food-list.jsx';
 import RestaurantDetail from '../pages/restaurant-detail.jsx';
 import FoodDetail from '../pages/food-detail.jsx';
+import FoodForm from "../pages/food-form.jsx";
 
 var routes = [
   { path: '/', component: HomePage, },
   { path: '/restaurantlist/', component: RestaurantList, },
   { path: '/restaurantdetail/', component: RestaurantDetail, },
   { path: '/foodlist/', component: FoodList, },
+  { path: '/food-form/', component: FoodForm, },
   { path: '/fooddetail/', component: FoodDetail, },
   { path: '/recipelist/', component: RecipeList, },
   { path: '/articlelist/', component: ArticleList, },

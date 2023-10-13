@@ -2,14 +2,15 @@ import { Button, Segmented, f7 } from "framework7-react";
 import React from "react";
 import { isUserAdmin } from "../../js/auth/isUserAdmin";
 
-const EditDeleteButton = ({f7router, tableName}) => {
+const EditDeleteButton = ({f7router, tableName, preData}) => {
     const userAdmin = isUserAdmin();
 
     const goForm = () => {
         f7.panel.close('#panel-right');
         f7router.navigate("/food-form/", {
             props: {
-                tableName
+                tableName,
+                preData
             }
         })
     }
@@ -25,7 +26,7 @@ const EditDeleteButton = ({f7router, tableName}) => {
                     <Button
                         bgColor="teal"
                         color="white"
-                        onClick={handleEdit}
+                        onClick={goForm}
                     >Edit</Button>
                     <Button
                         color="white"
