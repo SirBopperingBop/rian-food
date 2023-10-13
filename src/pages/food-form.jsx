@@ -1,6 +1,9 @@
 import { 
     Block, 
     Link, 
+    List, 
+    ListInput, 
+    ListItem, 
     NavLeft, 
     NavTitle, 
     Navbar, 
@@ -11,7 +14,8 @@ import formStructure from ".././json/formStructure.json"
 import { supabase } from "@supabase/auth-ui-shared";
 
 export default function FoodForm({tableName, preData}) {
-    console.log(JSON.stringify(formStructure))
+    const currentStructure = formStructure[tableName]
+    console.log(JSON.stringify(currentStructure))
 
     const submitFormData = async () => {
         try {
@@ -36,8 +40,40 @@ export default function FoodForm({tableName, preData}) {
                 </NavTitle>
             </Navbar>
             <Block>
-                <h1>Hello world!</h1>
-                <p>In laborum laborum dolore nulla laboris enim labore sint est consectetur ullamco nulla. Occaecat laborum enim tempor ipsum laborum dolor ut nulla tempor proident culpa magna sint. Ipsum mollit Lorem cillum amet id non in Lorem in. Consectetur exercitation nulla ex adipisicing mollit nostrud. Pariatur culpa in amet non fugiat anim dolor nulla dolore adipisicing in aliquip. Laborum nulla nostrud magna ullamco. Eiusmod et ullamco et voluptate ipsum culpa mollit incididunt laborum laboris est fugiat proident proident.</p>
+                <List 
+                    mediaList
+                    strongIos
+                    outlineIos
+                    dividersIos
+                    form
+                    formStoreData
+                >
+                    {
+                        Object.keys(currentStructure).map(key => {
+                            let returnedComponent;
+                            const type = currentStructure[key].type || ""
+                            const label = currentStructure[key].label || ""
+                            switch (type) {
+                                case "input":
+                                    returnedComponent = (
+                                        <ListInput type={currentStructure[key].inputType} label={label}></ListInput>
+                                    )
+                                    break;
+                                case "boolean":
+                                    returnedComponent = (
+                                        <ListItem checkbox title={label}></ListItem>
+                                    )
+                                    break;
+                                default:
+                                    returnedComponent = (
+                                        <p>Error loading {key}...</p>
+                                    )
+                                    break;
+                            }
+                            return returnedComponent
+                        })
+                    }
+                </List>
             </Block>
         </Page>
     )

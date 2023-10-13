@@ -31,8 +31,8 @@
             "label": "Your geolocation Here"
         },
         "phone": {
-            "type": "tel",
-            "inputType": "text",
+            "type": "input",
+            "inputType": "tel",
             "label": "Your telephone number Here"
         },
         "email": {
@@ -46,8 +46,8 @@
             "label": "Your website Here"
         },
         "whatsapp": {
-            "type": "tel",
-            "inputType": "text",
+            "type": "input",
+            "inputType": "tel",
             "label": "Your whatsapp Here"
         },
         "cuisinetype": {
@@ -71,19 +71,24 @@
             "label": "Your social media Here"
         },
         "is_childfriendly": {
-            "type": "boolean"
+            "type": "boolean",
+            "label": "My restaurant is child friendly"
         },
         "is_handicappedfriendly": {
-            "type": "boolean"
+            "type": "boolean",
+            "label": "My restaurant is handicapped friendly"
         },
         "has_vegan": {
-            "type": "boolean"
+            "type": "boolean",
+            "label": "My restaurant has vegan options"
         },
         "has_hallal": {
-            "type": "boolean"
+            "type": "boolean",
+            "label": "My restaurant has halal options"
         },
         "is_active": {
-            "type": "boolean"
+            "type": "boolean",
+            "label": "My restaurant is active"
         },
         "alias": {
             "type": "input",
