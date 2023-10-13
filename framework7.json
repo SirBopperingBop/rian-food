@@ -3,7 +3,7 @@
   "type": [
     "pwa"
   ],
-  "name": "Joy",
+  "name": "Food",
   "framework": "react",
   "template": "tabs",
   "bundler": "vite",

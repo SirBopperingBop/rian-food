@@ -18,6 +18,9 @@
     "last 5 Firefox versions"
   ],
   "dependencies": {
+    "@supabase/auth-ui-react": "^0.4.2",
+    "@supabase/auth-ui-shared": "^0.1.6",
+    "@supabase/supabase-js": "^2.33.1",
     "dom7": "^4.0.6",
     "framework7": "^8.3.0",
     "framework7-icons": "^5.0.5",
@@ -26,6 +29,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-social-login-buttons": "^3.9.1",
     "skeleton-elements": "^4.0.1",
     "swiper": "^10.2.0"
   },

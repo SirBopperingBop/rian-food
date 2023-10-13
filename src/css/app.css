@@ -21,6 +21,59 @@ Author URL : https://themeforest.net/user/astylers
 
 */
 
+:root {
+    --gray: #777777;
+    --light-gray: #f8f8f8;
+    --green: #42860e;
+    --dark-orange: #A35D00;
+    --orange: #fb8c00;
+    --silver: #8A8D8F;
+    --dark-green: #3b7e08;
+    --dark-brown: #295507;
+    --bright-green: #73f014;
+    --pale-green: #ceffa9;
+    --light-green: #4EA60C;
+    --blue: #106DA3;
+    --light-blue: #6196b4;
+    --lighter-blue: #81a1b3;
+    --pale-blue: #b4d4e6;
+    --lightest-blue: #cddde5;
+    --sky-blue: #3f85ae;
+    --light-silver: #E0E0E0;
+    --lighter-silver: #E8E8E8;
+    --pale-silver: #F0F0F0;
+    --super-light-silver: #F5F5F5;
+    --black: #000000;
+    --dark-gray: #161616;
+    --darker-gray: #242424;
+    --darkest-gray: #3c3c3c;
+    --charcoal: #484848;
+    --midnight-blue: #001428;
+    --deep-blue: #002244;
+    --lightest-sky-blue: #e9eef5;
+    --lighter-gray: #ccc;
+    --white: #fff;
+    --red: #f44336;
+    --purple: #ba68c8;
+    --sky-blue: #64b5f6;
+    --lime-green: #66bb6a;
+    --yellow: #fdd835;
+    --aqua: #80cbc4;
+    --pink: #e91e63;
+    --pale-yellow: #dce775;
+    --deep-purple: #9831e0;
+    --vibrant-red: #ff0000;
+    --vibrant-green: #00ff00;
+    --vibrant-blue: #0000ff;
+    --pale-green: #72ea72;
+    --very-light-gray: #ddd;
+
+    --f7-theme-color: #fb8c00!important;
+    --f7-input-item-bg-color: rgba(0, 0, 0, 0);
+    --f7-input-bg-color: white;
+      
+}
+
 /*general*/
 body {
     background: #e9eef5;
@@ -327,10 +380,6 @@ img.people {
 /* page-content */
 .page {
     background: #e9eef5;
-}
-
-.page-content {
-    padding-top: 0;
 }
 
 /* container */
@@ -1194,6 +1243,7 @@ form textarea {
     padding: unset;
 }
 
+
 .small-blog-list {
     padding: 10px 10px 0px 10px;
 }
@@ -1202,4 +1252,48 @@ form textarea {
     background: white;
     border-radius: 10px;
 }
+
+.small-blog-list.transparant li {
+    background-color: #00000000;
+}
 /* small-media end */
+
+/* swiper-slide-end */
+swiper-slide {
+    min-height: 210px!important;
+}
+
+swiper-slide .block {
+    /* height: 100%; */
+    margin-top: calc( 25% - 10px );
+}
+
+.swiper-last {
+    height: 100%;
+    padding: 50px;
+}
+/* swiper-slide-end end*/
+
+/* group-header */
+.group-header {
+    /* border-top: var(--very-light-gray); */
+    /* border-top-style: solid; */
+    /* border-width: 1px; */
+    margin-top: 6rem;
+    min-height: 2rem;
+    display: flex;
+    padding: 20px 15px 20px 15px;
+}
+
+.group-header .group-title {
+    font-size: 1.5rem;
+}
+
+.group-header .group-btn {
+    padding-top: 8px;
+    color: var( --gray );
+    font-weight: 800;
+    position: absolute;
+    right: 0px;
+}
+/* group-header end*/

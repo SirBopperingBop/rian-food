@@ -1,0 +1,176 @@
+{
+  "breakfast": [
+    {
+      "name": "Pancakes",
+      "price": 3.99,
+      "description": "Fluffy pancakes served with your choice of syrup, fruit, or whipped cream.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pancakes_with_syrup_and_fruit.jpg/1200px-Pancakes_with_syrup_and_fruit.jpg"
+    },
+    {
+      "name": "Waffles",
+      "price": 4.99,
+      "description": "Light and crispy waffles served with your choice of syrup, fruit, or whipped cream.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Belgian_waffles.jpg/1200px-Belgian_waffles.jpg"
+    },
+    {
+      "name": "French Toast",
+      "price": 5.99,
+      "description": "Thick slices of bread soaked in custard and fried until golden brown. Served with your choice of syrup, fruit, or whipped cream.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/French_toast.jpg/1200px-French_toast.jpg"
+    },
+    {
+      "name": "Omelet",
+      "price": 6.99,
+      "description": "A fluffy omelet filled with your choice of cheese, meat, and vegetables.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Omelet.jpg/1200px-Omelet.jpg"
+    },
+    {
+      "name": "Hash Browns",
+      "price": 2.99,
+      "description": "Crispy shredded potatoes cooked in a skillet.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hash_browns.jpg/1200px-Hash_browns.jpg"
+    },
+    {
+      "name": "Bacon",
+      "price": 2.99,
+      "description": "Two strips of crispy bacon.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Bacon_strips.jpg/1200px-Bacon_strips.jpg"
+    },
+    {
+      "name": "Sausage",
+      "price": 2.99,
+      "description": "Two links of sausage.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Sausage_links.jpg/1200px-Sausage_links.jpg"
+    },
+    {
+      "name": "Eggs",
+      "price": 1.99,
+      "description": "Two eggs cooked to your liking.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sunny_side_up_eggs.jpg/1200px-Sunny_side_up_eggs.jpg"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Soup of the Day",
+      "description": "A delicious and hearty soup, made fresh daily.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Chicken_noodle_soup.jpg/1200px-Chicken_noodle_soup.jpg"
+    },
+    {
+      "name": "Salad",
+      "description": "A fresh and crisp salad, made with your choice of greens, vegetables, and dressing.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Greek_salad.jpg/1200px-Greek_salad.jpg"
+    },
+    {
+      "name": "Sandwich",
+      "description": "A classic sandwich, made with your choice of bread, meat, cheese, and vegetables.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Grilled_cheese_sandwich.jpg/1200px-Grilled_cheese_sandwich.jpg"
+    },
+    {
+      "name": "Burger",
+      "description": "A juicy burger, made with your choice of meat, cheese, and toppings.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hamburger.jpg/1200px-Hamburger.jpg"
+    },
+    {
+      "name": "Fries",
+      "description": "A classic side of fries, served hot and crispy.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/French_fries.jpg/1200px-French_fries.jpg"
+    },
+    {
+      "name": "Onion Rings",
+      "description": "A delicious and crispy side of onion rings, served with your choice of dipping sauce.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Onion_rings.jpg/1200px-Onion_rings.jpg"
+    },
+    {
+      "name": "Chocolate Chip Cookie",
+      "description": "A warm and gooey chocolate chip cookie, served with a scoop of ice cream.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Chocolate_chip_cookie.jpg/1200px-Chocolate_chip_cookie.jpg"
+    },
+    {
+      "name": "Ice Cream Sundae",
+      "description": "A classic ice cream sundae, made with your choice of ice cream, toppings, and sauces.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ice_cream_sundae.jpg/1200px-Ice_cream_sundae.jpg"
+    }
+  ],
+  "dinner": [
+    {
+      "name": "Appetizers",
+      "items": [
+        {
+          "name": "Mozzarella Sticks",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Mozzarella_sticks.jpg/1200px-Mozzarella_sticks.jpg",
+          "price": 6.99
+        },
+        {
+          "name": "Caesar Salad",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Caesar_salad.jpg/1200px-Caesar_salad.jpg",
+          "price": 9.99
+        },
+        {
+          "name": "Soup of the Day",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Tomato_soup.jpg/1200px-Tomato_soup.jpg",
+          "price": 5.99
+        }
+      ]
+    },
+    {
+      "name": "Main Courses",
+      "items": [
+        {
+          "name": "Grilled Salmon",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Grilled_salmon.jpg/1200px-Grilled_salmon.jpg",
+          "price": 19.99
+        },
+        {
+          "name": "Steak",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Steak_with_mushrooms.jpg/1200px-Steak_with_mushrooms.jpg",
+          "price": 24.99
+        },
+        {
+          "name": "Chicken Parmesan",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chicken_parmesan.jpg/1200px-Chicken_parmesan.jpg",
+          "price": 17.99
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {
+          "name": "French Fries",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/French_fries.jpg/1200px-French_fries.jpg",
+          "price": 3.99
+        },
+        {
+          "name": "Rice Pilaf",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Rice_pilaf.jpg/1200px-Rice_pilaf.jpg",
+          "price": 4.99
+        },
+        {
+          "name": "Steamed Vegetables",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Steamed_vegetables.jpg/1200px-Steamed_vegetables.jpg",
+          "price": 3.99
+        }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        {
+          "name": "Chocolate Cake",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Chocolate_cake.jpg/1200px-Chocolate_cake.jpg",
+          "price": 6.99
+        },
+        {
+          "name": "Ice Cream",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vanilla_ice_cream.jpg/1200px-Vanilla_ice_cream.jpg",
+          "price": 4.99
+        },
+        {
+          "name": "Cheesecake",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Cheesecake.jpg/1200px-Cheesecake.jpg",
+          "price": 5.99
+        }
+      ]
+    }
+  ]
+}

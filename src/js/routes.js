@@ -1,3 +1,7 @@
+import { createClient } from "@supabase/supabase-js";
+const supabaseUrl = import.meta.env.VITE_REACT_APP_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_REACT_APP_SUPABASE_ANON_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 import HomePage from '../pages/home.jsx';
 import AboutPage from '../pages/about.jsx';
@@ -31,10 +35,21 @@ import Logout from '../pages/logout.jsx';
 import Pages from '../pages/pages.jsx';
 import Notification from '../pages/notification.jsx';
 import Cards from '../pages/cards.jsx';
+import ArticleList from '../pages/article-list.jsx';
+import RestaurantList from '../pages/restaurant-list.jsx';
+import RecipeList from '../pages/recipe-list.jsx';
+import FoodList from '../pages/food-list.jsx';
+import RestaurantDetail from '../pages/restaurant-detail.jsx';
+import FoodDetail from '../pages/food-detail.jsx';
 
 var routes = [
   { path: '/', component: HomePage, },
-  
+  { path: '/restaurantlist/', component: RestaurantList, },
+  { path: '/restaurantdetail/', component: RestaurantDetail, },
+  { path: '/foodlist/', component: FoodList, },
+  { path: '/fooddetail/', component: FoodDetail, },
+  { path: '/recipelist/', component: RecipeList, },
+  { path: '/articlelist/', component: ArticleList, },
   
   { path: '/pages/', component: Pages, }, 
   { path: '/history/', component: History, }, 
@@ -137,4 +152,5 @@ var routes = [
   },
 ];
 
+export {supabase};
 export default routes;
