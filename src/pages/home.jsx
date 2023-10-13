@@ -105,13 +105,6 @@ FAROOKH TODO: host the project on netlify.
 import React, { useState, useEffect } from 'react';
 import {
   Page,
-  Navbar,
-  NavLeft,
-  NavTitle,
-  NavTitleLarge,
-  NavRight,
-  Link,
-  Toolbar,
   Block,
   List,
   ListItem,
