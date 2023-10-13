@@ -1,0 +1,124 @@
+{
+    "restaurants": {
+        "name": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your restaurant name Here"
+        },
+        "address": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your restaurant address Here"
+        },
+        "country": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your country Here"
+        },
+        "district": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your district Here"
+        },
+        "area": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your area Here"
+        },
+        "geolocation": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your geolocation Here"
+        },
+        "phone": {
+            "type": "tel",
+            "inputType": "text",
+            "label": "Your telephone number Here"
+        },
+        "email": {
+            "type": "input",
+            "inputType": "email",
+            "label": "Your email Here"
+        },
+        "website": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your website Here"
+        },
+        "whatsapp": {
+            "type": "tel",
+            "inputType": "text",
+            "label": "Your whatsapp Here"
+        },
+        "cuisinetype": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your cuisine type Here"
+        },
+        "meals": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your meals Here"
+        },
+        "settings": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your settings Here"
+        },
+        "socialmedia": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your social media Here"
+        },
+        "is_childfriendly": {
+            "type": "boolean"
+        },
+        "is_handicappedfriendly": {
+            "type": "boolean"
+        },
+        "has_vegan": {
+            "type": "boolean"
+        },
+        "has_hallal": {
+            "type": "boolean"
+        },
+        "is_active": {
+            "type": "boolean"
+        },
+        "alias": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your alias Here"
+        },
+        "shortdescription": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your short description Here"
+        },
+        "profile_img": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your profile image Here"
+        },
+        "background_img": {
+            "type": "input",
+            "inputType": "text",
+            "label": "Your background image Here"
+        },
+        "specials_description": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your specials description Here"
+        },
+        "must_try_description": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your must try description Here"
+        },
+        "businesstype": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your business type Here"
+        }
+    }
+}
