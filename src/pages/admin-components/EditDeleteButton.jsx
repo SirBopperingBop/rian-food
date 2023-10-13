@@ -1,6 +1,7 @@
 import { Button, Segmented, f7 } from "framework7-react";
 import React, { useEffect, useState } from "react";
 import { isUserAdmin } from "../../js/auth/isUserAdmin";
+import { supabase } from "../../js/routes.js";
 
 const EditDeleteButton = ({f7router, tableName, preData}) => {
     const [userAdminBool, setUserAdminBool] = useState();
@@ -27,20 +28,16 @@ const EditDeleteButton = ({f7router, tableName, preData}) => {
     }
 
     const deleteFormData = async (itemId) => {
-        //TODO: uncomment this when youve implemented the preData
-        // const { error } = await supabase
-        //     .from(tableName)
-        //     .delete()
-        //     .eq('id', itemId)
-        // f7.dialog.alert(`Deleted ${itemId}`);
-        // location.reload()
-        console.log(itemId);
+        const { error } = await supabase
+            .from(tableName)
+            .delete()
+            .eq('id', itemId)
+        f7.dialog.alert(`Deleted ${itemId}`);
+        location.reload()
     }
 
     const promptDelete = () => {
-        //TODO: uncomment this when youve implemented the preData
-        // f7.dialog.confirm(`Are you sure?`, () => deleteFormData(preData.id)); 
-        f7.dialog.confirm(`Are you sure?`, () => deleteFormData(preData));
+        f7.dialog.confirm(`Are you sure?`, () => deleteFormData(preData.id)); 
     };
 
     return (
