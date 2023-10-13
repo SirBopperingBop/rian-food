@@ -5,6 +5,11 @@
             "inputType": "text",
             "label": "Your restaurant name Here"
         },
+        "description": {
+            "type": "input",
+            "inputType": "textarea",
+            "label": "Your restaurant description Here"
+        },
         "address": {
             "type": "input",
             "inputType": "text",
