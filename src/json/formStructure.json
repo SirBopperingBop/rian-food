@@ -60,11 +60,6 @@
             "inputType": "textarea",
             "label": "Your meals Here"
         },
-        "settings": {
-            "type": "input",
-            "inputType": "text",
-            "label": "Your settings Here"
-        },
         "socialmedia": {
             "type": "input",
             "inputType": "text",

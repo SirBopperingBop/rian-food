@@ -43,7 +43,11 @@ export const isUserAdmin = async () => {
 
         const isAdmin = adminList.some((admin) => admin.email === userMetadataEmail);
 
-        return isAdmin;
+        if (isAdmin) {
+            return true
+        } else {
+            return false
+        }
     } catch (error) {
         console.error('Error checking admin status:', error);
         return false;

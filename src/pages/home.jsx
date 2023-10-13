@@ -119,7 +119,8 @@ import {
 import FollowUs from '../components/FollowUs';
 import { supabase } from '../js/routes';
 import { FacebookLoginButton, GoogleLoginButton } from "react-social-login-buttons";
-import EditDeleteButton from './shorthand-components/EditDeleteButton';
+import EditDeleteButton from './admin-components/EditDeleteButton';
+import AddButton from './admin-components/AddButton';
 
 const HomePage = ({ f7router }) => {
   const [session, setSession] = useState(null)
@@ -356,20 +357,22 @@ const HomePage = ({ f7router }) => {
         <div className="group-title">Restaurants</div>
         <Button small className='group-btn' onClick={() => { f7router.navigate('/restaurantlist/') }} text='View All'><i className="fa fa-chevron-right"></i></Button>
       </div>
+      <Block style={{marginBottom: 0, marginTop: 0}}>
+        <AddButton f7router={f7router} tableName="restaurants"/>
+      </Block>
       <swiper-container pagination space-between="50">
         {
-          [1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => {
+          restaurantsDataArray.map((item, index) => {
             return (
               <swiper-slide key={index}>
                 <Card className='card-profile box-shadow'>
-                <EditDeleteButton tableName={"restaurants"} preData={{}} f7router={f7router}/>
+                  <EditDeleteButton tableName={"restaurants"} preData={item} f7router={f7router}/>
                   <CardHeader style={{ backgroundImage: `url(${'img/slides/slide_home_1.jpg'})` }}>
                     <div className="back-gradient"></div>
                     <Button onClick={() => { f7router.navigate('/restaurantdetail/') }} className="logo box-shadow" style={{ backgroundImage: `url(${'img/slides/slide_home_1.jpg'})` }}></Button>
                     <div className="titles">
-                      <div className="title">Lorem ipsum dolor sit amet</div>
-                      <div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing
-                      </div>
+                      <div className="title">{item.name}</div>
+                      <div className="subtitle">{item.description}</div>
                     </div>
                   </CardHeader>
                 </Card>

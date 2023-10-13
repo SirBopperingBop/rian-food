@@ -1,5 +1,6 @@
 import { 
     Block, 
+    Button, 
     Link, 
     List, 
     ListInput, 
@@ -7,15 +8,17 @@ import {
     NavLeft, 
     NavTitle, 
     Navbar, 
-    Page 
+    Page, 
+    f7
 } from "framework7-react";
-import React from "react";
+import React, { useState } from "react";
 import formStructure from ".././json/formStructure.json"
-import { supabase } from "@supabase/auth-ui-shared";
+import { supabase } from "../js/routes";
 
 export default function FoodForm({tableName, preData}) {
+    const [formData, setFormData] = useState({...preData})
+    console.log(formData);
     const currentStructure = formStructure[tableName]
-    console.log(JSON.stringify(currentStructure))
 
     const submitFormData = async () => {
         try {
@@ -23,10 +26,20 @@ export default function FoodForm({tableName, preData}) {
                 .from(tableName)
                 .upsert(formData)
             console.log(error, data)
+            location.reload()
         } catch (error) {
             console.log(error)
         }
-        location.reload()
+    }
+    
+    const promptSubmit = () => {
+        f7.dialog.confirm(`Are you sure?`, () => submitFormData());
+    };
+
+    
+
+    function toProperCap(string) {
+        return string[0].toUpperCase() + string.slice(1)
     }
 
     return (
@@ -36,7 +49,7 @@ export default function FoodForm({tableName, preData}) {
                     <Link back backLink="Back"><i className="fa fa-chevron-left"></i></Link>
                 </NavLeft>
                 <NavTitle>
-                    Editing {tableName}
+                    {toProperCap(tableName)} form
                 </NavTitle>
             </Navbar>
             <Block>
@@ -49,19 +62,41 @@ export default function FoodForm({tableName, preData}) {
                     formStoreData
                 >
                     {
-                        Object.keys(currentStructure).map(key => {
+                        Object.keys(currentStructure).map((key, index) => {
                             let returnedComponent;
                             const type = currentStructure[key].type || ""
                             const label = currentStructure[key].label || ""
                             switch (type) {
                                 case "input":
                                     returnedComponent = (
-                                        <ListInput type={currentStructure[key].inputType} label={label}></ListInput>
+                                        <ListInput 
+                                            key={`${index}-${key}`}
+                                            type={currentStructure[key].inputType} 
+                                            label={label}
+                                            value={formData[key] || ""}
+                                            onChange={e => setFormData(prevState => {
+                                                return {
+                                                    ...prevState,
+                                                    [key]: e.target.value
+                                                }
+                                            })}
+                                        ></ListInput>
                                     )
                                     break;
                                 case "boolean":
                                     returnedComponent = (
-                                        <ListItem checkbox title={label}></ListItem>
+                                        <ListItem 
+                                            key={`${index}-${key}`}
+                                            checkbox 
+                                            title={label}
+                                            checked={formData[key] || false}
+                                            onChange={() => setFormData(prevState => {
+                                                return {
+                                                    ...prevState,
+                                                    [key]: !prevState[key]
+                                                }
+                                            })}
+                                        ></ListItem>
                                     )
                                     break;
                                 default:
@@ -74,6 +109,7 @@ export default function FoodForm({tableName, preData}) {
                         })
                     }
                 </List>
+                <Button fill bgColor="teal" onClick={promptSubmit}>Submit Form</Button>
             </Block>
         </Page>
     )
