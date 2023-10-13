@@ -32,7 +32,7 @@ export default function FoodForm({tableName, preData}) {
                     <Link back backLink="Back"><i className="fa fa-chevron-left"></i></Link>
                 </NavLeft>
                 <NavTitle>
-                    Edit {tableName}
+                    Editing {tableName}
                 </NavTitle>
             </Navbar>
             <Block>
